@@ -36,7 +36,7 @@ const About = () => {
       </ul>
       {/* Download CV Button */}
       <a
-        href="https://drive.google.com/file/d/1eemTq7fJEZQjLhKL7sJRVDcb8nawR2cD/view" // Re place with the actual path to your CV file
+        href="https://drive.google.com/file/d/1CWrANj69DhEYM0yoqWj2tfrdEWvJU9KC/view?usp=drive_link" // Re place with the actual path to your CV file
         target="_blank" // This opens the link in a new tab
         rel="noopener noreferrer"
       >
