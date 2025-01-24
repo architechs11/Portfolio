@@ -14,11 +14,13 @@ const App = () => {
       <Navbar />
 
       {/* Sections */}
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <ContactMe />
+      <div className="px-4 sm:px-6"> {/* Add padding for mobile screens */}
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <ContactMe />
+      </div>
 
       {/* Footer */}
       <Footer />

@@ -33,18 +33,28 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex flex-col items-center justify-center">
-      <h2 className="text-3xl font-bold mb-6">Skills</h2>
-      <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
+    <section
+      id="skills"
+      className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex flex-col items-center justify-center px-4 sm:px-6 py-12"
+    >
+      {/* Section Title */}
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+        Skills
+      </h2>
+
+      {/* Skills Grid */}
+      <div className="grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 max-w-6xl">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-4 bg-gray-800 rounded shadow-lg transform transition-transform hover:scale-110 hover:bg-gray-700"
+            className="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:bg-gray-700"
             data-aos="fade-up" // Apply animation on scroll
             data-aos-delay={index * 100} // Delay animation based on index for sequential appearance
           >
             {skill.icon}
-            <p className="mt-4 text-lg font-medium text-center">{skill.name}</p>
+            <p className="mt-2 text-sm sm:text-base font-medium text-center">
+              {skill.name}
+            </p>
           </div>
         ))}
       </div>
