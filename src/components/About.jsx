@@ -19,15 +19,15 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex flex-col items-center justify-center text-pretty text-white px-2"
+      className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex flex-col items-center justify-center text-pretty text-white px-4 sm:px-6 lg:px-8"
     >
       <h2
-        className="text-4xl font-bold mb-6"
+        className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6"
         data-aos="fade-up" // Animation on the title
       >
         About Me
       </h2>
-      <ul className="max-w-2xl text-left list-disc list-inside space-y-6 text-lg leading-relaxed">
+      <ul className="max-w-2xl text-left list-disc list-inside space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed">
         <li data-aos="fade-up">Hi, I am Archit Shukla, a passionate programmer with a strong foundation in Java, Python, JavaScript, and DSA.</li>
         <li data-aos="fade-up" data-aos-delay="100">Currently, I am in my final year of Computer Science Engineering, and I love solving complex problems and building efficient solutions.</li>
         <li data-aos="fade-up" data-aos-delay="200">My expertise includes creating dynamic web applications using HTML5, CSS3, JavaScript, React.js, etc.</li>
@@ -36,11 +36,11 @@ const About = () => {
       </ul>
       {/* Download CV Button */}
       <a
-        href="https://drive.google.com/file/d/1eemTq7fJEZQjLhKL7sJRVDcb8nawR2cD/view"  // Replace with the actual path to your CV file
-        target="_blank"  // This opens the link in a new tab
+        href="https://drive.google.com/file/d/1eemTq7fJEZQjLhKL7sJRVDcb8nawR2cD/view" // Replace with the actual path to your CV file
+        target="_blank" // This opens the link in a new tab
         rel="noopener noreferrer"
       >
-        <button className="mt-6 px-6 py-3 bg-blue-900 text-white rounded-md text-lg font-semibold hover:bg-blue-600 transition-all">
+        <button className="mt-6 px-4 py-2 sm:px-6 sm:py-3 bg-blue-900 text-white rounded-md text-base sm:text-lg font-semibold hover:bg-blue-600 transition-all">
           Download CV
         </button>
       </a>
