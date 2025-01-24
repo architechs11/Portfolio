@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: radial-gradient(
+      ellipse 80% 80% at 50% -20%,
+      rgba(184, 107, 243, 0.337),
+      rgba(200, 255, 255, 0)
+    );
+    background-color: #171717; /* Fallback color for older browsers */
+    background-attachment: fixed; /* Ensures the background stays fixed */
+    background-size: cover; /* Ensures the background covers the entire page */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll from the background */
+  }
+  
