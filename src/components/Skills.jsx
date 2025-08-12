@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { FaJava, FaReact, FaLinux, FaPython, FaNodeJs } from 'react-icons/fa';
-import { SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiMysql, SiOpenai } from 'react-icons/si';
+import { FaJava, FaReact, FaLinux, FaPython, FaNodeJs} from 'react-icons/fa';
+import { SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiMysql, SiOpenai, SiExpress, SiDotnet } from 'react-icons/si';
 import { VscCode } from 'react-icons/vsc'; // Generic code icon for Object-Oriented Programming
 import { MdApi } from 'react-icons/md'; // API icon for REST APIs
 import AOS from 'aos'; // Import AOS
@@ -21,6 +21,9 @@ const Skills = () => {
     { name: 'Data Structures & Algorithms', icon: <VscCode className="text-4xl text-gray-300" /> },
     { name: 'REST APIs', icon: <MdApi className="text-4xl text-red-400" /> },
     { name: 'Node.js', icon: <FaNodeJs className="text-4xl text-green-400" /> },
+    { name: 'Object-Oriented Programming', icon: <VscCode className="text-4xl text-gray-300" /> }, 
+    { name: 'ASP.NET Core', icon: <SiDotnet className="text-4xl text-blue-700" /> },
+    { name: 'Express.js', icon: <SiExpress className="text-4xl text-gray-400" /> },
   ];
 
   useEffect(() => {

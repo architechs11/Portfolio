@@ -10,7 +10,7 @@ body {
     );
     background-color: #171717; /* Fallback color for older browsers */
     background-attachment: fixed; /* Ensures the background stays fixed */
-    background-size: cover; /* Ensures the background covers the entire page */
+    background-size:0cqmax; /* Ensures the background covers the entire page */
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevents horizontal scroll from the background */

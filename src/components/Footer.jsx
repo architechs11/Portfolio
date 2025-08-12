@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="text-white bg-gradient-to-b from-gray-900 to-black py-8">
       <div className="container mx-auto text-center px-4 sm:px-6">
         {/* Contact Information */}
-        <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:space-x-6 space-y-4 sm:space-y-0 mb-8">
+        <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-6 space-y-4 sm:space-y-0 mb-8">
           {/* Location */}
           <div className="flex items-center gap-2">
             <FaHome size={20} />
@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="mb-8">
           <h4 className="text-lg sm:text-xl font-semibold">About the Creator</h4>
           <p className="mt-2 text-gray-300 text-sm sm:text-base">
-            This is me Archit Shukla, currently in my final year of Engineering in Computer Science. <br />
+            This is me Archit Shukla, currently a Software Developer at Arvius Software Pvt. Ltd., Noida. <br />
             I love to develop things and build codes.
           </p>
         </div>

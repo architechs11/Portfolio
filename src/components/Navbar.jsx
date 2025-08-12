@@ -8,9 +8,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-gray-900 text-white p-4">
+    <nav className="fixed top-0 left-0 w-full bg-gray-900 text-white p-4 shadow-lg z-50">
       <div className="flex justify-between items-center">
         <h1 className="text-2xl font-bold">Portfolio</h1>
+        
         {/* Hamburger Icon */}
         <button
           className="md:hidden text-white hover:text-gray-400 focus:outline-none"
@@ -40,43 +41,25 @@ const Navbar = () => {
             )}
           </svg>
         </button>
+
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-6">
-          <a href="#home" className="hover:text-gray-400">
-            Home
-          </a>
-          <a href="#about" className="hover:text-gray-400">
-            About
-          </a>
-          <a href="#skills" className="hover:text-gray-400">
-            Skills
-          </a>
-          <a href="#projects" className="hover:text-gray-400">
-            Projects
-          </a>
-          <a href="#contact" className="hover:text-gray-400">
-            Contact Me
-          </a>
+          <a href="#home" className="hover:text-gray-400">Home</a>
+          <a href="#about" className="hover:text-gray-400">About</a>
+          <a href="#skills" className="hover:text-gray-400">Skills</a>
+          <a href="#projects" className="hover:text-gray-400">Projects</a>
+          <a href="#contact" className="hover:text-gray-400">Contact Me</a>
         </div>
       </div>
+
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="mt-4 flex flex-col space-y-2 md:hidden">
-          <a href="#home" className="hover:text-gray-400">
-            Home
-          </a>
-          <a href="#about" className="hover:text-gray-400">
-            About
-          </a>
-          <a href="#skills" className="hover:text-gray-400">
-            Skills
-          </a>
-          <a href="#projects" className="hover:text-gray-400">
-            Projects
-          </a>
-          <a href="#contact" className="hover:text-gray-400">
-            Contact Me
-          </a>
+          <a href="#home" className="hover:text-gray-400">Home</a>
+          <a href="#about" className="hover:text-gray-400">About</a>
+          <a href="#skills" className="hover:text-gray-400">Skills</a>
+          <a href="#projects" className="hover:text-gray-400">Projects</a>
+          <a href="#contact" className="hover:text-gray-400">Contact Me</a>
         </div>
       )}
     </nav>

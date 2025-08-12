@@ -14,7 +14,7 @@ const App = () => {
       <Navbar />
 
       {/* Sections */}
-      <div className="px-4 sm:px-6"> {/* Add padding for mobile screens */}
+      <div > {/* Add padding for mobile screens */}
         <Home />
         <About />
         <Skills />
