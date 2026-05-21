@@ -1,6 +1,30 @@
 import React, { useEffect } from 'react';
-import { FaJava, FaReact, FaLinux, FaPython, FaNodeJs} from 'react-icons/fa';
-import { SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiMysql, SiOpenai, SiExpress, SiDotnet } from 'react-icons/si';
+import {
+  FaJava,
+  FaReact,
+  FaLinux,
+  FaPython,
+  FaNodeJs,
+  FaDocker,
+  FaAws,
+  FaGitAlt,
+} from "react-icons/fa";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTailwindcss,
+  SiMysql,
+  SiOpenai,
+  SiExpress,
+  SiTypescript,
+  SiNextdotjs,
+  SiPostgresql,
+  SiPrisma,
+  SiPostman,
+  SiJsonwebtokens,
+  SiAuth0,
+} from "react-icons/si";
 import { VscCode } from 'react-icons/vsc'; // Generic code icon for Object-Oriented Programming
 import { MdApi } from 'react-icons/md'; // API icon for REST APIs
 import AOS from 'aos'; // Import AOS
@@ -8,23 +32,37 @@ import 'aos/dist/aos.css'; // Import AOS styles
 
 const Skills = () => {
   const skills = [
-    { name: 'Java', icon: <FaJava className="text-4xl text-red-600" /> },
-    { name: 'React.js', icon: <FaReact className="text-4xl text-blue-500" /> },
-    { name: 'HTML', icon: <SiHtml5 className="text-4xl text-orange-500" /> },
-    { name: 'CSS', icon: <SiCss3 className="text-4xl text-blue-400" /> },
-    { name: 'JavaScript', icon: <SiJavascript className="text-4xl text-yellow-500" /> },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-4xl text-teal-500" /> },
-    { name: 'Linux', icon: <FaLinux className="text-4xl text-gray-500" /> },
-    { name: 'Python', icon: <FaPython className="text-4xl text-blue-300" /> },
-    { name: 'MySQL', icon: <SiMysql className="text-4xl text-blue-600" /> },
-    { name: 'Generative AI', icon: <SiOpenai className="text-4xl text-purple-500" /> },
-    { name: 'Data Structures & Algorithms', icon: <VscCode className="text-4xl text-gray-300" /> },
-    { name: 'REST APIs', icon: <MdApi className="text-4xl text-red-400" /> },
-    { name: 'Node.js', icon: <FaNodeJs className="text-4xl text-green-400" /> },
-    { name: 'Object-Oriented Programming', icon: <VscCode className="text-4xl text-gray-300" /> }, 
-    { name: 'ASP.NET Core', icon: <SiDotnet className="text-4xl text-blue-700" /> },
-    { name: 'Express.js', icon: <SiExpress className="text-4xl text-gray-400" /> },
-  ];
+  { name: 'Java', icon: <FaJava className="text-4xl text-red-600" /> },
+  { name: 'JavaScript', icon: <SiJavascript className="text-4xl text-yellow-500" /> },
+  { name: 'TypeScript', icon: <SiTypescript className="text-4xl text-blue-500" /> },
+
+  { name: 'React.js', icon: <FaReact className="text-4xl text-cyan-400" /> },
+  { name: 'Next.js', icon: <SiNextdotjs className="text-4xl text-white" /> },
+  { name: 'HTML', icon: <SiHtml5 className="text-4xl text-orange-500" /> },
+  { name: 'CSS', icon: <SiCss3 className="text-4xl text-blue-400" /> },
+  { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-4xl text-teal-400" /> },
+
+  { name: 'Node.js', icon: <FaNodeJs className="text-4xl text-green-500" /> },
+  { name: 'Express.js', icon: <SiExpress className="text-4xl text-gray-300" /> },
+
+  { name: 'PostgreSQL', icon: <SiPostgresql className="text-4xl text-blue-400" /> },
+  { name: 'Prisma ORM', icon: <SiPrisma className="text-4xl text-cyan-200" /> },
+
+  { name: 'Docker', icon: <FaDocker className="text-4xl text-blue-500" /> },
+  { name: 'AWS', icon: <FaAws className="text-4xl text-orange-400" /> },
+
+  { name: 'Git', icon: <FaGitAlt className="text-4xl text-orange-600" /> },
+  { name: 'Postman', icon: <SiPostman className="text-4xl text-orange-500" /> },
+
+  { name: 'REST APIs', icon: <MdApi className="text-4xl text-red-400" /> },
+  { name: 'JWT Authentication', icon: <SiJsonwebtokens className="text-4xl text-pink-500" /> },
+  { name: 'OAuth', icon: <SiAuth0 className="text-4xl text-orange-400" /> },
+
+  { name: 'Object-Oriented Programming', icon: <VscCode className="text-4xl text-gray-300" /> },
+  { name: 'Data Structures & Algorithms', icon: <VscCode className="text-4xl text-gray-300" /> },
+
+  { name: 'Linux', icon: <FaLinux className="text-4xl text-yellow-400" /> },
+];
 
   useEffect(() => {
     // Initialize AOS
